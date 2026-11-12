@@ -1,0 +1,1 @@
+"""Transcribe voice recordings into a SQLite database."""

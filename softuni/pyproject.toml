@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-transcriber"
+version = "0.1.0"
+description = "Transcribe voice recordings with Whisper and store them in SQLite."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["openai-whisper"]
+
+[project.scripts]
+voice-transcribe = "voice_transcriber.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
